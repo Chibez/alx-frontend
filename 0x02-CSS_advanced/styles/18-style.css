@@ -1,0 +1,43 @@
+:root {
+  --nav-item-font-family: var(--font-family-title);
+  --nav-item-font-weight: var(--font-weight-bold);
+  --nav-item-font-size: var(--font-size-medium);
+  --nav-item-letter-spacing: 0.04rem; /* 4% of root element font size */
+  --nav-item-display: inline-block;
+  --nav-item-margin: 0 0 3rem 0; /* Bottom margin 3 times root element */
+  --nav-item-link-hover: var(--color-primary);
+}
+
+.navbar-menu {
+  float: right; /* Floats the navbar menu to the right */
+}
+
+nav {
+  margin: 0; /* Sets margin on all sides to 0 */
+  padding: 0; /* Sets padding on all sides to 0 */
+  text-align: center; /* Center aligns the text */
+}
+
+nav ul {
+  list-style: none; /* Removes default list styles */
+  padding: 0; /* Ensures padding is set to 0 */
+  margin: 0; /* Ensures margin is set to 0 */
+}
+
+.nav-item {
+  font-family: var(--nav-item-font-family); /* Font family from custom property */
+  font-weight: var(--nav-item-font-weight); /* Font weight from custom property */
+  font-size: var(--nav-item-font-size); /* Font size from custom property */
+  letter-spacing: var(--nav-item-letter-spacing); /* Letter spacing from custom property */
+  display: var(--nav-item-display); /* Display from custom property */
+  margin: var(--nav-item-margin); /* Margin from custom property */
+}
+
+.nav-link {
+  display: block; /* Sets display to block */
+  padding: calc(0.5 * 1rem) calc(1rem); /* Half of root element for top/bottom, full for left/right */
+}
+
+.nav-link:hover {
+  color: var(--nav-item-link-hover); /* Changes color on hover */
+}
